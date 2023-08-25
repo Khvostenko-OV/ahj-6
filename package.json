@@ -8,7 +8,7 @@
     "build": "webpack --mode production",
     "lint": "eslint . --fix",
     "test": "jest --passWithNoTests",
-    "coverage": "jest --coverage",
+    "coverage": "jest --coverage --passWithNoTests",
     "doc": "jsdoc -c jsdoc.conf.json",
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
