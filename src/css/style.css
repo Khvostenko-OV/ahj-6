@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.roll {
+    display: inline-block;
+    margin-left: 40px;
+    padding: .5em 1em;
+    background: blue;
+    color: white;
+    border: 1px solid #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.roll:hover {
+    background: darkblue;
+}
+
+.container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #888;
+    border-radius: 4px;
+    white-space: pre-line;
+    overflow-wrap: break-word;
+}
+
+.collapse {
+    display: none;
+}
+
+.collapse_3 {
+    height: 200px;
+    transition: height 1s linear;
+}
+
+.collapse_1 {
+    overflow: hidden;
+    animation-name: rolldown;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.collapse_2 {
+    overflow: hidden;
+    animation-name: rollup;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rolldown {
+    from {
+        max-height: 0;
+    }
+
+    to {
+        max-height: 1000px;
+    }
+}
+
+@keyframes rollup {
+    from {
+        max-height: 1000px;
+    }
+
+    to {
+        max-height: 0px;
+    }
+}
+
+
+.chat {
+    width: 300px;
+    padding: .5em;
+    box-sizing: border-box;
+    border: 1px solid #111;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0px 0px 20px 0px #5c5c5c;
+    display: none;
+    position: absolute;
+}
+
+.chat_open {
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/circle.png);
+    background-size: contain;
+    cursor: pointer;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    transition: all 100ms linear;
+}
+
+.chat_open:hover {
+    width: 60px;
+    height: 60px;
+    top: 195px;
+    left: 395px;
+    transition: all 100ms linear;
+}
+
+.chat_open_open {
+    animation-name: open_btn;
+    animation-duration: 100ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes open_btn {
+    from {
+        width: 40px;
+        height: 40px;
+        top: 205px;
+        left: 405px;
+    }
+
+    to {
+        width: 50px;
+        height: 50px;
+        top: 200px;
+        left: 400px;
+    }
+}
+
+.chat_close {
+    position: relative;
+    left: 264px;
+    width: 1em;
+    text-align: center;
+    padding: 0 2px;
+    cursor: pointer;
+}
+
+.chat_close:hover {
+    background: #ccc;
+}
+
+.chat_send {
+    width: 100%;
+    padding: .2em 0;
+}
+
+.input {
+    width: 98%;
+    margin: .5em 0;
+}
+
+.liker {
+    position: absolute;
+    left: 200px;
+    top: 400px;
+    width: 100px;
+    height: 46px;
+    text-align: center;
+    padding: .8em 0;
+    box-sizing: border-box;
+    border: 1px solid deeppink;
+    border-radius: 4px;
+    background: deeppink;
+    color: white;
+    cursor: pointer;
+}
+
+.like {
+    text-align: center;
+    padding: .8em 0;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url(../img/heart.png);
+    background-size: contain;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.heart0 {
+    animation-name: track0;
+}
+
+.heart1 {
+    animation-name: track1;
+}
+
+.heart2 {
+    animation-name: track2;
+}
+
+.heart3 {
+    animation-name: track3;
+}
+
+@keyframes track0 {
+    0% {
+        left: 40px;
+        top: -20px;
+        opacity: 1;
+    }
+    25% {
+        left: 0px;
+    }
+    50% {
+        left: 40px
+    }
+    75% {
+        left: 80px;
+    }
+    100% {
+        left: 40px;
+        top: -200px;
+        opacity: 0;
+    }
+}
+
+@keyframes track1 {
+    0% {
+        left: 40px;
+        top: -20px;
+        opacity: 1;
+    }
+    25% {
+        left: 40px;
+    }
+    50% {
+        left: 80px
+    }
+    75% {
+        left: 0px;
+    }
+    100% {
+        left: 40px;
+        top: -200px;
+        opacity: 0;
+    }
+}
+
+@keyframes track2 {
+    0% {
+        left: 40px;
+        top: -20px;
+        opacity: 1;
+    }
+    25% {
+        left: 40px;
+    }
+    50% {
+        left: 0px
+    }
+    75% {
+        left: 80px;
+    }
+    100% {
+        left: 40px;
+        top: -200px;
+        opacity: 0;
+    }
+}
+
+@keyframes track3 {
+    0% {
+        left: 40px;
+        top: -20px;
+        opacity: 1;
+    }
+    25% {
+        left: 80px;
+    }
+    50% {
+        left: 40px
+    }
+    75% {
+        left: 0px;
+    }
+    100% {
+        left: 40px;
+        top: -200px;
+        opacity: 0;
+    }
+}
