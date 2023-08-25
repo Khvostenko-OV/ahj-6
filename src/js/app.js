@@ -17,7 +17,7 @@ roll.addEventListener('click', () => {
 });
 
 collapse.addEventListener('animationend', (e) => { 
-  if (e.animationName == 'rolldown') {
+  if (e.animationName === 'rolldown') {
     collapse.classList.remove('collapse_1');
   } else {
     collapse.classList.remove('collapse_2');
