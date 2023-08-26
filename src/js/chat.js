@@ -5,8 +5,8 @@ export default function addRedButton(chat, chatClose) {
   const { right, bottom } = chat.getBoundingClientRect();
   chat.style.display = 'none';
   chatOpen.className = 'chat_open';
-  chatOpen.style.left = right - 35 + 'px';
-  chatOpen.style.top = bottom - 35 + 'px';
+  chatOpen.style.left = right - 40 + 'px';
+  chatOpen.style.top = bottom - 40 + 'px';
   chat.parentElement.insertBefore(chatOpen, chat);
   
   chatOpen.addEventListener('click', () => {
