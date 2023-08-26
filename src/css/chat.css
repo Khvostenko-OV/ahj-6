@@ -5,7 +5,6 @@
   background-size: contain;
   cursor: pointer;
   position: absolute;
-  transform: scale(1, 1);
 }
 
 .chat_open:hover {
@@ -13,10 +12,6 @@
   animation-duration: 100ms;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
-/*
-  transform: scale(1.2, 1.2);
-  transition: all 100ms linear;
-*/
 }
 
 @keyframes hover_btn {
@@ -38,12 +33,10 @@
 
 @keyframes open_btn {
   from {
-      width: 40px;
-      height: 40px;
+    transform: scale(.8, .8);
   }
 
   to {
-      width: 50px;
-      height: 50px;
+    transform: scale(1, 1);
   }
 }
