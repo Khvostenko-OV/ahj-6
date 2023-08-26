@@ -1,0 +1,39 @@
+.chat_open {
+  width: 50px;
+  height: 50px;
+  background-image: url(../img/circle.png);
+  background-size: contain;
+  cursor: pointer;
+  position: absolute;
+  transition: all 100ms linear;
+}
+
+.chat_open:hover {
+  width: 60px;
+  height: 60px;
+  top: 195px;
+  left: 395px;
+  transition: all 100ms linear;
+}
+
+.chat_open_open {
+  animation-name: open_btn;
+  animation-duration: 100ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open_btn {
+  from {
+      width: 40px;
+      height: 40px;
+      top: 205px;
+      left: 405px;
+  }
+
+  to {
+      width: 50px;
+      height: 50px;
+      top: 200px;
+      left: 400px;
+  }
+}

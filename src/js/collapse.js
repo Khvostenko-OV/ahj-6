@@ -9,7 +9,7 @@ export default function assignCollapseAction(btn, card) {
       card.classList.add('collapse_hide');
     } else {
       card.classList.remove('collapse');
-      card.classList.add('collapse_hide');
+      card.classList.add('collapse_show');
     }
   });
   
