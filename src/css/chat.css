@@ -9,13 +9,30 @@
 }
 
 .chat_open:hover {
+  animation-name: hover_btn;
+  animation-duration: 100ms;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+/*
   transform: scale(1.2, 1.2);
   transition: all 100ms linear;
+*/
+}
+
+@keyframes hover_btn {
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(1.2, 1.2);
+  }
 }
 
 .chat_open_open {
   animation-name: open_btn;
   animation-duration: 100ms;
+  animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
 
