@@ -1,0 +1,113 @@
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/heart.png);
+  background-size: contain;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.heart0 {
+  animation-name: track0;
+}
+
+.heart1 {
+  animation-name: track1;
+}
+
+.heart2 {
+  animation-name: track2;
+}
+
+.heart3 {
+  animation-name: track3;
+}
+
+@keyframes track0 {
+  0% {
+      left: 40px;
+      top: -20px;
+      opacity: 1;
+  }
+  25% {
+      left: 0px;
+  }
+  50% {
+      left: 40px
+  }
+  75% {
+      left: 80px;
+  }
+  100% {
+      left: 40px;
+      top: -200px;
+      opacity: 0;
+  }
+}
+
+@keyframes track1 {
+  0% {
+      left: 40px;
+      top: -20px;
+      opacity: 1;
+  }
+  25% {
+      left: 40px;
+  }
+  50% {
+      left: 80px
+  }
+  75% {
+      left: 0px;
+  }
+  100% {
+      left: 40px;
+      top: -200px;
+      opacity: 0;
+  }
+}
+
+@keyframes track2 {
+  0% {
+      left: 40px;
+      top: -20px;
+      opacity: 1;
+  }
+  25% {
+      left: 40px;
+  }
+  50% {
+      left: 0px
+  }
+  75% {
+      left: 80px;
+  }
+  100% {
+      left: 40px;
+      top: -200px;
+      opacity: 0;
+  }
+}
+
+@keyframes track3 {
+  0% {
+      left: 40px;
+      top: -20px;
+      opacity: 1;
+  }
+  25% {
+      left: 80px;
+  }
+  50% {
+      left: 40px
+  }
+  75% {
+      left: 0px;
+  }
+  100% {
+      left: 40px;
+      top: -200px;
+      opacity: 0;
+  }
+}
