@@ -29,7 +29,7 @@
 
 @keyframes rollup {
   from {
-      max-height: 1000px;
+      max-height: 750px;
   }
   to {
       max-height: 0px;
